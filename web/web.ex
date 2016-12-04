@@ -16,23 +16,11 @@ defmodule Dum.Web do
   below.
   """
 
-  def model do
-    quote do
-      use Ecto.Schema
-
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query
-    end
-  end
 
   def controller do
     quote do
       use Phoenix.Controller
 
-      alias Dum.Repo
-      import Ecto
-      import Ecto.Query
 
       import Dum.Router.Helpers
       import Dum.Gettext
@@ -65,9 +53,6 @@ defmodule Dum.Web do
     quote do
       use Phoenix.Channel
 
-      alias Dum.Repo
-      import Ecto
-      import Ecto.Query
       import Dum.Gettext
     end
   end

@@ -1,3 +1,0 @@
-var _user$project$Messages$PlayersMsg = function (a) {
-	return {ctor: 'PlayersMsg', _0: a};
-};

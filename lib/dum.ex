@@ -10,7 +10,7 @@ defmodule Dum do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the Ecto repository
-      supervisor(Dum.Repo, []),
+      # supervisor(Dum.Repo, []),
       # Start the endpoint when the application starts
       supervisor(Dum.Endpoint, []),
       # Start your own worker by calling: Dum.Worker.start_link(arg1, arg2, arg3)
